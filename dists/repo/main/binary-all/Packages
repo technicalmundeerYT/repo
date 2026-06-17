@@ -4,9 +4,9 @@ Architecture: all
 Maintainer: Technical Mundeer
 Filename: pool/main/mundeer_1.0_all.deb
 Size: 1584
-MD5sum: 1394de92e48e3d253145a922ed426bbc
-SHA1: 3502d4b7b06651175cb16f688eb572624ccee5aa
-SHA256: 3d5ae3deff4473f15c6ef77e611bf88ffb7fbcf207fefa9950487f70c3dfff59
+MD5sum: 71216ecb90df2e509231c09ea64f0d22
+SHA1: a0a96df160dd47c483c9c9fedfd2a0d6172ebd53
+SHA256: 7083c411a4f88303c5ec6fafe2b26e1c0e328d8bc99323844a6e3e1bfad1cc50
 Section: utils
 Priority: optional
 Homepage: https://technicalmundeeryt.github.io/repo/

@@ -7,87 +7,86 @@
 
 <style>
 body{
-background:#0d1117;
-color:#00ff88;
-font-family:Arial,sans-serif;
-text-align:center;
-padding:20px;
-margin:0;
+    background:#0d1117;
+    color:#00ff88;
+    font-family:Arial,sans-serif;
+    text-align:center;
+    padding:20px;
+    margin:0;
 }
 
-img{
-width:120px;
-height:auto;
-display:block;
-margin:20px auto;
+.logo{
+    width:220px;
+    max-width:90%;
+    border-radius:12px;
+    margin-top:20px;
 }
 
 h1{
-font-size:42px;
-margin:10px 0;
+    font-size:60px;
+    margin:15px 0;
 }
 
 .btn{
-display:inline-block;
-padding:12px 20px;
-margin:10px;
-background:#00ff88;
-color:#000;
-text-decoration:none;
-border-radius:10px;
-font-weight:bold;
+    display:inline-block;
+    padding:12px 22px;
+    margin:10px;
+    background:#00ff88;
+    color:#000;
+    text-decoration:none;
+    border-radius:10px;
+    font-weight:bold;
 }
 
 .box{
-background:#161b22;
-padding:20px;
-border-radius:12px;
-margin:20px auto;
-max-width:600px;
+    background:#161b22;
+    padding:20px;
+    border-radius:15px;
+    margin:20px auto;
+    max-width:650px;
 }
 
 pre{
-background:#0d1117;
-padding:12px;
-border-radius:8px;
-overflow:auto;
-color:#00ff88;
-text-align:left;
+    background:#0d1117;
+    color:#00ff88;
+    padding:12px;
+    border-radius:8px;
+    text-align:left;
+    overflow:auto;
 }
 
 input{
-width:90%;
-padding:12px;
-border:none;
-border-radius:8px;
-font-size:16px;
+    width:90%;
+    padding:12px;
+    border:none;
+    border-radius:8px;
+    font-size:16px;
+    margin-bottom:10px;
 }
 
 .tool{
-background:#0d1117;
-padding:10px;
-margin:8px 0;
-border-radius:8px;
+    background:#0d1117;
+    padding:10px;
+    margin:8px;
+    border-radius:6px;
 }
 
 .footer{
-margin-top:30px;
-opacity:.8;
+    margin-top:30px;
+    color:#00ff88;
 }
 </style>
 
 <script>
-function searchTool() {
-let input = document.getElementById("search").value.toLowerCase();
-let tools = document.getElementsByClassName("tool");
+function searchTool(){
+let input=document.getElementById("search").value.toLowerCase();
+let tools=document.getElementsByClassName("tool");
 
-for (let i = 0; i < tools.length; i++) {
-let txt = tools[i].innerText.toLowerCase();
-
-if (txt.includes(input)) {
-tools[i].style.display = "block";
-} else {
-tools[i].style.display = "none";
+for(let i=0;i<tools.length;i++){
+if(tools[i].innerText.toLowerCase().includes(input)){
+tools[i].style.display="block";
+}else{
+tools[i].style.display="none";
 }
 }
 }
@@ -96,18 +95,15 @@ tools[i].style.display = "none";
 </head>
 <body>
 
-<img src="logo.png" alt="Termux Mundeer Logo" width="240">
+<img src="logo.png" alt="Termux Mundeer Logo" class="logo">
+
 <h1>🚀 Termux Mundeer</h1>
 
 <p>Custom Termux APT Repository by Technical Mundeer</p>
 
-<a class="btn" href="https://youtube.com/@TechnicalMundeer">
-YouTube
-</a>
+<a class="btn" href="https://youtube.com/@TechnicalMundeer">YouTube</a>
 
-<a class="btn" href="https://t.me/TechnicalMundeerYT">
-Telegram
-</a>
+<a class="btn" href="https://t.me/TechnicalMundeerYT">Telegram</a>
 
 <div class="box">
 <h2>📦 Features</h2>
@@ -117,6 +113,7 @@ Telegram
 <p>✔ Development Packages</p>
 <p>✔ Repository Updates</p>
 <p>✔ Radare2 Support</p>
+
 </div>
 
 <div class="box">
@@ -126,6 +123,7 @@ Telegram
 apt update
 apt upgrade -y
 </pre>
+
 </div>
 
 <div class="box">
@@ -149,6 +147,7 @@ apt install package-name
 </div>
 
 <div class="box">
+
 <h2>🔍 Tool Search</h2>
 
 <input
@@ -177,7 +176,7 @@ placeholder="Search Tool..."
 </div>
 
 <div class="footer">
-© Technical Mundeer
+© 2026 Technical Mundeer
 </div>
 
 </body>

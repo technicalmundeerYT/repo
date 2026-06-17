@@ -43,3 +43,4 @@ jobs:
         git commit -m "Update repository" || exit 0
 
         git push
+        

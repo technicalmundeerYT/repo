@@ -1,1 +1,45 @@
+name: Build Mundeer Repo
 
+on:
+  push:
+    branches:
+      - main
+  workflow_dispatch:
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout
+      uses: actions/checkout@v4
+
+    - name: Build package
+      run: |
+        mkdir -p pool/main
+
+        dpkg-deb --build packages/mundeer
+
+        mv packages/mundeer.deb \
+           pool/main/mundeer_1.0_all.deb
+
+    - name: Generate Packages index
+      run: |
+        mkdir -p dists/repo/main/binary-all
+
+        dpkg-scanpackages pool /dev/null > \
+        dists/repo/main/binary-all/Packages
+
+        gzip -fk \
+        dists/repo/main/binary-all/Packages
+
+    - name: Commit repo files
+      run: |
+        git config user.name github-actions
+        git config user.email github-actions@github.com
+
+        git add pool dists
+
+        git commit -m "Update repository" || exit 0
+
+        git push

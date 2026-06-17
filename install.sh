@@ -11,12 +11,6 @@ clear
 echo -e "${GREEN}"
 cat << "EOF"
 
-████████╗███╗   ███╗
-╚══██╔══╝████╗ ████║
-   ██║   ██╔████╔██║
-   ██║   ██║╚██╔╝██║
-   ██║   ██║ ╚═╝ ██║
-   ╚═╝   ╚═╝     ╚═╝
 
 ████████╗███████╗██████╗ ███╗   ███╗██╗   ██╗██╗  ██╗
 ╚══██╔══╝██╔════╝██╔══██╗████╗ ████║██║   ██║╚██╗██╔╝
@@ -44,7 +38,7 @@ apt update -y
 echo -e "${YELLOW}[+] Creating Repository Config...${RESET}"
 mkdir -p $PREFIX/etc/apt/sources.list.d
 
-echo "deb [trusted=yes] https://technicalmundeeryt.github.io/termux-mundeer repo main" > \
+echo "deb [trusted=yes] https://technicalmundeeryt.github.io/repo repo main" > \
 $PREFIX/etc/apt/sources.list.d/termuxmundeer.list
 
 echo -e "${YELLOW}[+] Refreshing Repositories...${RESET}"

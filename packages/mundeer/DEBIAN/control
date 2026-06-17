@@ -1,1 +1,11 @@
-
+Package: mundeer
+Version: 1.0
+Architecture: all
+Maintainer: Technical Mundeer
+Description: Termux Mundeer Package Manager
+Section: utils
+Priority: optional
+Homepage: https://technicalmundeeryt.github.io
+Description: TermuxVoid package manager and system helper
+Official package manager for Termux Mundeer repository with utilities
+for package management, system updates, and maintenance tasks.

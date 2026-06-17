@@ -4,7 +4,7 @@ Architecture: all
 Maintainer: Technical Mundeer
 Section: utils
 Priority: optional
-Homepage: https://technicalmundeeryt.github.io/repo
+Homepage: https://technicalmundeeryt.github.io/repo/
 Description: Official package manager for Termux Mundeer repository
  Includes package management tools, system utilities,
  repository updates and maintenance features.

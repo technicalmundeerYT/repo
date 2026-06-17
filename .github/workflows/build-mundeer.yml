@@ -26,13 +26,16 @@ jobs:
     - name: Generate Packages index
       run: |
         mkdir -p dists/repo/main/binary-all
+mkdir -p dists/repo/main/binary-aarch64
 
-        dpkg-scanpackages pool /dev/null > \
-        dists/repo/main/binary-all/Packages
+dpkg-scanpackages pool /dev/null > \
+dists/repo/main/binary-all/Packages
 
-        gzip -fk \
-        dists/repo/main/binary-all/Packages
+cp dists/repo/main/binary-all/Packages \
+dists/repo/main/binary-aarch64/Packages
 
+gzip -fk dists/repo/main/binary-all/Packages
+gzip -fk dists/repo/main/binary-aarch64/Packages
     - name: Commit repo files
       run: |
         git config user.name github-actions

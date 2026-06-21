@@ -33,7 +33,7 @@ X      X     @%%;;@   |. ` ; ; ; ;  ,|   @%%;;@     X      X
                          @%%;;@..@@
                           @@@  @@ 
 EOF
-echo -e "${RED}___________________Owner By 𝕋𝕖𝕔𝕙𝕟𝕚𝕔𝕒𝕝 𝕄𝕦𝕟𝕕𝕖𝕖𝕣_________>
+echo -e "${RED}___________________Owner By 𝕋𝕖𝕔𝕙𝕟𝕚𝕔𝕒𝕝 𝕄𝕦𝕟𝕕𝕖𝕖𝕣_________>"
 echo " "
 echo -e "${CYAN}Termux Mundeer Package Manager${NC}"
 echo

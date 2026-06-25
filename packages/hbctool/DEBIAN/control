@@ -1,1 +1,6 @@
-
+Package: hbctool
+Version: 0.1.5
+Architecture: all
+Maintainer: Technical Mundeer
+Depends: bash, curl, python, python-pip
+Description: HBC Tool for Termux

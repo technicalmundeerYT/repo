@@ -2,11 +2,12 @@ Package: mundeer
 Version: 1.0
 Architecture: all
 Maintainer: Technical Mundeer
+Depends: ruby
 Filename: pool/main/mundeer_1.0_all.deb
-Size: 1586
-MD5sum: 2e7e6cec30c3705f9233a61484fda210
-SHA1: 2c74d51bbcad92f7b03ee533c0abd029e7127f37
-SHA256: 8b2b33ad40443d6e768beedc0e6ade3d0dcce6d99bdbe688da79eef72d2ce259
+Size: 1592
+MD5sum: a85fdadd8c85ca68e6f1e751231e1d3e
+SHA1: 4bd829a617b1375c1b7e688e0ae08e01734a99e9
+SHA256: 08c7282f241765d7fe8b792c42895bf9aa6676c8e296385d8f0aecb6985c4736
 Section: utils
 Priority: optional
 Homepage: https://technicalmundeeryt.github.io/repo/
